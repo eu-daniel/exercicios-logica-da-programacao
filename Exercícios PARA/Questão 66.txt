@@ -1,0 +1,19 @@
+algoritmo "Questão 66"
+// Função :
+// Autor :
+// Data : 08/12/2023
+// Seção de Declarações
+// Seção de Declarações
+var
+   cont, num, resultado: inteiro
+inicio
+// Seção de Comandos
+cont <- 0
+escreva("Informe um número: ")
+leia(num)
+para cont := 0 ate 9 faca
+cont <- cont + 1
+resultado <- num * cont
+escreval(num," x",cont," =",resultado)
+fimPara
+fimalgoritmo

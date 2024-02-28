@@ -1,0 +1,16 @@
+algoritmo "Questão 43"
+
+var
+   cont: inteiro
+inicio
+// Seção de Comandos
+   cont <- 31
+   enquanto (cont >= 1) faca
+            cont <- cont - 1
+            se (cont % 4 = 0) entao
+            escreva("[",cont,"]")
+            senao
+            escreva(cont)
+            fimSe
+   fimEnquanto
+fimalgoritmo

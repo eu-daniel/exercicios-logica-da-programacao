@@ -1,0 +1,19 @@
+algoritmo "Questão 48"
+// Função :
+// Autor :
+// Data : 07/12/2023
+// Seção de Declarações 
+var
+   cont, num, soma: inteiro
+inicio
+// Seção de Comandos
+   cont <- 0
+   soma <- 0
+   repita
+         escreva("Escreva um número: ")
+         leia(num)
+         cont <- cont + 1
+         soma <- soma + num
+   ate(cont = 7)
+   escreval("A soma dos números inteiros é: ",soma)
+fimalgoritmo

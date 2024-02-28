@@ -1,0 +1,18 @@
+algoritmo "semnome"
+//
+var
+ vel, media, multa: real
+inicio
+Escreval("--------------------")
+Escreva("Velocidade do carro (km): ")
+leia (vel)
+Escreval("-------RESULTADO------")
+media <- vel-80
+multa <- media*5
+se (vel > 80) entao
+Escreval("VOCÊ FOI MULTADO EM ", multa, " reais.")
+senao
+   Escreval("VOCÊ NÃO FOI MULTADO.")
+   Escreval("--------------------")
+fimSE
+fimalgoritmo

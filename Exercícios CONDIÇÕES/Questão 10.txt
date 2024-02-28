@@ -1,0 +1,18 @@
+algoritmo "Questão 10"
+// Função :
+// Autor :
+// Data : 23/11/2023
+// Seção de Declarações
+var
+   larg, altu, area, tinta: real
+inicio
+// Seção de Comandos
+         escreva("Largura: ")
+         leia(larg)
+         escreva("Altura: ")
+         leia(altu)
+         area <- (larg*altu)
+         tinta <- (area*2)
+         escreval("A area a ser pintada é de", area, " metros.")
+         escreval("Serão necessários", tinta, " litros de tinta.")
+fimalgoritmo

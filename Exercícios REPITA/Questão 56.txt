@@ -1,0 +1,16 @@
+algoritmo "Questão 56"
+// Função :
+// Autor :
+// Data : 08/12/2023
+// Seção de Declarações 
+var
+    num, soma: inteiro
+inicio
+// Seção de Comandos
+repita
+      escreva("Informe um número: ")
+      leia(num)
+      soma <- soma + (num)
+ate(num = 1111)
+      escreva("A soma dos números ditados foi: ",soma-1111)
+fimalgoritmo

@@ -1,0 +1,23 @@
+algoritmo "Questão 49"
+
+var
+   valor, cont_par, cont_impar: inteiro
+   cont: inteiro
+inicio
+// Seção de Comandos
+     cont <- 1
+     cont_impar <- 0
+     cont_par <- 0
+     enquanto (cont <= 6) faca
+     escreva("Digite um valor: ")
+     leia(valor)
+     se (valor % 2 = 0) entao
+     cont_par <- cont_par + 1
+          senao
+               cont_impar <- cont_impar + 1
+     fimSe
+     cont <- cont + 1
+     fimEnquanto
+     escreva("Você digitou", cont_par, " números pares e", cont_impar, " números ímpares.")
+fimalgoritmo
+

@@ -1,0 +1,32 @@
+algoritmo "Questão 23"
+// Função :
+// Autor :
+// Data : 21/11/2023
+// Seção de Declarações
+var
+nome, sexo, M, F: caractere
+valor, homem, mulher: real
+inicio
+// Seção de Comandos
+      Escreva("Informe seu nome: ")
+      leia(nome)
+      Escreval("-------------------")
+      Escreval("[F] - FEMININO")
+      Escreval("[M] - MASCULINO")
+      Escreval("-------------------")
+      Escreva("Informe seu sexo: ")
+      leia(sexo)
+      Escreval("-------------------")
+      Escreva("Valor das Compras: R$")
+      leia(valor)
+      Escreval("-------------------")
+      homem <- valor - (valor * (5/100))
+      mulher <- valor - (valor * (13/100))
+         se (sexo = "M") entao
+            Escreval("O valor com desconto ficará: R$", homem)
+         senao
+            se (sexo = "F") entao
+               Escreval("O valor com desconto ficará: R$", mulher)
+            fimSe
+         fimSe
+fimalgoritmo

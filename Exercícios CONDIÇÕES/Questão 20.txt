@@ -1,0 +1,17 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 21/11/2023
+// Seção de Declarações 
+var
+   num: inteiro
+inicio
+// Seção de Comandos
+Escreva("Digite um número: ")
+leia(num)
+se (num % 2 = 0) entao
+Escreva("O número é PAR.")
+senao
+Escreva("O número é ÍMPAR.")
+fimSe
+fimalgoritmo

@@ -1,0 +1,24 @@
+algoritmo "Questão 61"
+// Função :
+// Autor :
+// Data : 08/12/2023
+// Seção de Declarações 
+var
+   cont, idade, somaIdades, maiores21: inteiro
+   mediaIdades: real
+   continuar: caractere
+inicio
+// Seção de Comandos
+cont <- 0
+repita
+      escreva("Informe sua idade: ")
+      leia(idade)
+      somaIdades <- somaIdades + idade
+      se(idade >= 21)entao
+      maiores21 <- maioresIdade + 1
+      fimSe
+ate(continuar = "N")
+escreva("Idades digitadas: ",somaIdades)
+escreva("Pessoas com mais de 21 anos:",maiores21)
+escreva("Média entre as idades digitadas:",mediaIdades)
+fimalgoritmo

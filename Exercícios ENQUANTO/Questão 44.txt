@@ -1,0 +1,20 @@
+algoritmo "Questão 44"
+
+var
+   primValor, soma, contar_at, incr: inteiro
+inicio
+// Seção de Comandos
+   primValor <- 0
+   escreva("Digite o primeiro valor: ")
+   leia(primValor)
+   escreva("Digite o último valor: ")
+   leia(contar_at)
+   escreva("Digite o incremento: ")
+   leia(incr)
+   escreva("Contagem:")
+   enquanto (primValor <= contar_at) faca
+             primValor <- primValor + incr
+             escreva(primValor)
+   fimEnquanto
+              escreva(" Acabou!")
+fimalgoritmo

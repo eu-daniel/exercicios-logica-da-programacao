@@ -1,0 +1,13 @@
+algoritmo "Questão 39"
+
+var
+   cont: inteiro
+inicio
+// Seção de Comandos
+   cont <- 6
+   enquanto (cont >= 6) e (cont <= 11) faca
+            escreva(cont, " ")
+            cont <- cont + 1
+   fimEnquanto
+   escreva("Acabou!")
+fimalgoritmo

@@ -1,0 +1,31 @@
+algoritmo "Questão 58"
+// Função :
+// Autor :
+// Data : 04/12/2023
+// Seção de Declarações
+var
+somaIdade, idadeAluno, somaAlunos, resultadoIdade, resultadoAlunos: inteiro
+continuar: caractere
+media: real
+inicio
+// Seção de Comandos
+somaIdade <- 0
+idadeAluno <- 0
+somaAlunos <- 0
+   enquanto (idadeAluno <> 999) faca
+   escreva("Digite a idade do aluno: ")
+   leia(idadeAluno)
+   //Quantidade de alunos:
+   somaAlunos <- somaAlunos + 1
+   resultadoAlunos <- somaAlunos - 1
+   //Soma da idade dos alunos:
+   somaIdade <- (somaIdade + idadeAluno)
+   resultadoIdade <- somaIdade - 999
+   escreval(" Clique [999] para encerrar a soma ")
+   escreval("------------------------------------")
+fimEnquanto
+//Média da idade dos alunos
+media <- (resultadoIdade/resultadoAlunos)
+escreval("A turma possui:", resultadoAlunos, " alunos.")
+escreval("A média de idade da turma é de: ", media, " anos.")
+fimalgoritmo

@@ -1,0 +1,15 @@
+algoritmo "Questão 46"
+// Função :
+// Autor :
+// Data : 07/12/2023
+// Seção de Declarações 
+var
+   cont: inteiro
+inicio
+// Seção de Comandos
+   cont <- 4
+   repita
+         cont <- cont + 2
+         escreval(cont," +")
+   ate(cont = 100)
+fimalgoritmo

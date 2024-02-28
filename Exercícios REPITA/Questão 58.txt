@@ -1,0 +1,23 @@
+algoritmo "Questão - 58"
+// Função :
+// Autor :
+// Data : 08/12/2023
+// Seção de Declarações 
+var
+    somaAlunos, idade, somaIdades: inteiro
+inicio
+// Seção de Comandos
+somaAlunos <- 0
+repita
+      escreva("Informe sua idade: ")
+      leia(idade)
+      somaAlunos <- somaAlunos + 1
+      somaIdades <- somaIdades + idade
+      se(idade = 999)entao
+      somaAlunos <- somaAlunos - 1
+      somaIdades <- somaIdades - 999
+      fimSe
+ate(idade = 999)
+      escreval("A soma de alunos é de:",somaAlunos)
+      escreval("A média é de: ",somaIdades/somaAlunos)
+fimalgoritmo

@@ -1,0 +1,30 @@
+algoritmo "Questão 26"
+// Função :
+// Autor :
+// Data : 21/11/2023
+// Seção de Declarações 
+var
+   n1, n2: inteiro
+   media: real
+inicio
+// Seção de Comandos
+   Escreva("Digite a primeira NOTA: ")
+   leia(n1)
+   Escreva("Digite a primeira NOTA: ")
+   leia(n2)
+   media <- (n1+n2)/2
+   se (media <= 4.9) entao
+   Escreval("Sua média foi: ", media)
+   Escreva("REPROVADO")
+   senao
+   se (media >= 5) e (media <= 6.9) entao
+   Escreval("Sua média foi: ", media)
+   Escreva("RECUPERAÇÃO.")
+   senao
+   se (media >= 7) entao
+   Escreval("Sua média foi: ", media)
+   Escreva("APROVADO.")
+   fimSe
+   fimSe
+   fimSe
+fimalgoritmo

@@ -1,0 +1,33 @@
+algoritmo "Questão 63"
+// Função :
+// Autor :
+// Data : 08/12/2023
+// Seção de Declarações
+var
+   continuar: caractere
+   pessoasCadastradas, num, numPares, somaNum, menorNum: inteiro
+   mediaNum: real
+inicio
+// Seção de Comandos
+pessoasCadastradas <- 0
+menorNum <- 9999
+repita
+      escreva("Informe um número: ")
+      leia(num)
+      pessoasCadastradas <- pessoasCadastradas + 1
+      somaNum <- somaNum + num
+      mediaNum <- somaNum/pessoasCadastradas
+      se(num < menorNum)entao
+      menorNum <- num
+      fimSe
+      se(num mod 2 = 0)entao
+      numPares <- numPares + 1
+      fimSe
+      escreva("Deseja continuar?")
+      leia(continuar)
+ate(continuar = "N")
+escreval("O somatório entre todos os valores:",somaNum)
+escreval("Menor valor digitado:",menorNum)
+escreval("Média entre os valores:",mediaNum)
+escreval("Nº de valores pares digitados:",numPares)
+fimalgoritmo

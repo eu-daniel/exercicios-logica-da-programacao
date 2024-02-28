@@ -1,0 +1,36 @@
+algoritmo "Questão 54"
+// Função :
+// Autor :
+// Data : 08/12/2023
+// Seção de Declarações
+var
+cont, maior90, maior100, menor50: inteiro
+peso, altura, somaAltura, mediaAltura: real
+inicio
+// Seção de Comandos
+cont <- 0
+repita
+      escreva("Informe seu peso: ")
+      leia(peso)
+      escreva("Informe sua altura: ")
+      leia(altura)
+      cont <- cont + 1
+      somaAltura <- somaAltura + altura
+      se(peso > 90)entao
+         maior90 <- maior90 + 1
+      fimSe
+           se(peso < 50) e (altura < 160)entao
+              menor50 <- menor50 + 1
+              senao
+                   se(peso > 100) e (altura > 190)entao
+                   maior100 <- maior100 + 1
+                   fimSe
+           fimSe
+           escreval("--------------------------------")
+ate(cont = 3)
+mediaAltura <- somaAltura/cont
+escreval("Média de altura do grupo: ",mediaAltura)
+escreval("Pessoas que pesam mais de 90kg:",maior90)
+escreval("Pessoas que pesam menos de 50kg e tem menos de 1,60m:",menor50)
+escreval("Pessoas que pesam mais de 100kg e tem mais de 1,90m:",maior100)
+fimalgoritmo

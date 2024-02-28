@@ -1,0 +1,24 @@
+algoritmo "Questão 56"
+// Função :
+// Autor :
+// Data : 04/12/2023
+// Seção de Declarações
+var
+somaValores, num: inteiro
+continuar: caractere
+inicio
+// Seção de Comandos
+somaValores <- 0
+continuar <- "0"
+   enquanto (continuar <> "1111") faca
+   escreva("Digite um número: ")
+   leia(num)
+   somaValores <- somaValores + num
+   escreval("Clique qualquer tecla para continuar")
+   escreval(" Clique [1111] para encerrar a soma ")
+   escreva("Deseja continuar? ")
+   leia(continuar)
+   escreval("------------------------------------")
+fimEnquanto
+escreva("O somatório de valores é: ",somaValores)
+fimalgoritmo

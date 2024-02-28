@@ -1,0 +1,26 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 21/11/2023
+// Seção de Declarações 
+var
+   nome: caractere
+   n1, n2, media: real
+inicio
+// Seção de Comandos
+Escreva("Informe seu nome: ")
+leia(nome)
+Escreva("Primeira NOTA: ")
+leia(n1)
+Escreva("Segunda NOTA: ")
+leia(n2)
+media <- (n1+n2)/2
+Escreval("-----------------------")
+Escreval("Sua nota foi: ", media)
+Escreval("-----------------------")
+se (media >= 7) entao
+Escreva("VOCÊ TEVE UM BOM APROVEITAMENTO.")
+senao
+Escreva("VOCÊ NÃO TEVE UM BOM APROVEITAMENTO.")
+fimSe
+fimalgoritmo

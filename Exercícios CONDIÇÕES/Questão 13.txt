@@ -1,0 +1,19 @@
+algoritmo "Questão 13"
+// Função :
+// Autor :
+// Data : 23/11/2023
+// Seção de Declarações
+var
+   a, aumento: real
+inicio
+// Seção de Comandos
+         escreval("----------------------")
+         escreval("  AUMENTO DE SALÁRIO  ")
+         escreval("----------------------")
+         escreva("Digite o salário: ")
+         leia(a)
+         escreval("----------------------")
+         aumento <- (a*15/100)
+         aumento <- a+aumento
+         escreva("O salário R$",a," com o aumento de 15%, ficará R$",aumento)
+fimalgoritmo

@@ -1,0 +1,46 @@
+algoritmo "Questão 59"
+// Função :
+// Autor :
+// Data : 08/12/2023
+// Seção de Declarações 
+var
+    sexo, continuar: caractere
+    idade, maiorIdade, menorIdade, homensCadastrados: inteiro
+    mulheresCadastradas, somaHomens: inteiro
+    mediaHomens: real
+inicio
+// Seção de Comandos
+maiorIdade <- 0
+menorIdade <- 9999
+repita
+      escreva("Informe o sexo: ")
+      leia(sexo)
+      escreva("Informe a idade: ")
+      leia(idade)
+      se(idade > maiorIdade)entao
+      maiorIdade <- idade
+      fimSe
+      se(sexo = "H") ou (sexo = "h")entao
+      homensCadastrados <- homensCadastrados + 1
+      somaHomens <- somaHomens + idade
+      senao
+           se(sexo = "M") ou (sexo = "m") entao
+              se(idade < menorIdade)entao
+                 menorIdade <- idade
+              fimSe
+           fimSe
+      fimSe
+      se(homensCadastrados <> 0)entao
+      mediaHomens <- somaHomens/homensCadastrados
+      fimSe
+      escreva("Deseja continuar? [S/N]")
+      leia(continuar)
+      escreval("------------------------------------")
+ate(continuar = "N")
+escreval("A maior idade digitada foi:",maiorIdade)
+escreval("Nº de homens cadastrados:",homensCadastrados)
+se(menorIdade <> 9999)entao
+escreval("Idade da mulher mais jovem:",menorIdade)
+fimSe
+escreval("Média de idade entre os homens:",mediaHomens)
+fimalgoritmo

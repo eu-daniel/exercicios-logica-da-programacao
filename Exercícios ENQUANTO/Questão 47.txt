@@ -1,0 +1,18 @@
+algoritmo "Questão, 47"
+// Função :
+// Autor :
+// Data : 27/11/2023
+// Seção de Declarações 
+var
+   cont, soma: inteiro
+inicio
+// Seção de Comandos
+   cont <- 500
+   soma <- 0
+   enquanto (cont >= 0) faca
+            escreva(cont, " +")
+            soma <- cont + soma
+            cont <- cont - 50
+   fimEnquanto
+              escreval("A soma total é: ", soma)
+fimalgoritmo

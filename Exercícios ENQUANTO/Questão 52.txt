@@ -1,0 +1,39 @@
+algoritmo "Questão 52"
+// Função :
+// Autor :
+// Data : 03/12/2023
+// Seção de Declarações
+var
+cont, idade, soma, maior18, menor5, maiorp: inteiro
+media: real
+continuar: caractere
+inicio
+// Seção de Comandos
+cont <- 0
+soma <- 0
+//
+enquanto (cont < 10) faca
+   escreva("Informe sua idade: ")
+   leia(idade)
+   cont <- cont + 1
+//media
+   soma <- soma + idade
+   media <- (soma/cont)
+//maior que 18
+   se(idade >= 18) entao
+      maior18 <- maior18 + 1
+   fimSe
+//menor que 5
+   se(idade <= 5) entao
+   menor5 <- menor5 + 1
+   fimSe
+//maior idade
+   se(idade > maiorp) entao
+   maiorp <- idade
+   fimSe
+fimEnquanto
+   escreval("Média: ", media)
+   escreval("Maior que 18: ", maior18)
+   escreval("Menor de 5: ", menor5)
+   escreval("Maior idade lida: ", maiorp)
+fimalgoritmo

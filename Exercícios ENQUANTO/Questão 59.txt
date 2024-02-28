@@ -1,0 +1,46 @@
+algoritmo "Questão 58"
+// Função :
+// Autor :
+// Data : 04/12/2023
+// Seção de Declarações
+var
+homensCadastrados, idadeHomens, menorIdadeMulher: inteiro
+maiorIdade, idade, numMulher: inteiro
+sexo, continuar: caractere
+mediaHomens, mediaMulheres: real
+inicio
+// Seção de Comandos
+continuar <- "S"
+menorIdadeMulher <- 999
+   enquanto (continuar = "S") faca
+   escreva("Informe sua idade: ")
+   leia(idade)
+   escreva("Informe seu sexo: ")
+   leia(sexo)
+   //Maior idade lida:
+   se(idade > maiorIdade) entao
+   maiorIdade <- idade
+   fimSe
+   //Homens cadastrados
+   se(sexo = "H") ou (sexo = "h") entao
+   homensCadastrados <- homensCadastrados + 1
+   idadeHomens <- idadeHomens + idade
+   fimSe
+        se(sexo = "M") e (sexo = "m") entao
+                 se(idade < menorIdadeMulher) entao
+                 menorIdadeMulher <- idade
+                 fimSe
+   fimSe
+   escreva("Deseja continuar? ")
+   leia(continuar)
+   escreval("------------------------------------")
+   //Média de idade entre homens cadastrados
+   se(homensCadastrados <> 0)entao
+   mediaHomens <- (idadeHomens/homensCadastrados)
+   fimSe
+fimEnquanto
+escreval("Maior idade: ", maiorIdade)
+escreval("Homens cadastrados: ", homensCadastrados)
+escreval("Idade da mulher mais jovem: ", menorIdadeMulher)
+escreval("Média de idade entre homens: ", mediaHomens)
+fimalgoritmo

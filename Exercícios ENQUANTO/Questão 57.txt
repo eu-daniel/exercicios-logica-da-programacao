@@ -1,0 +1,36 @@
+algoritmo "Questão 57"
+// Função :
+// Autor :
+// Data : 04/12/2023
+// Seção de Declarações
+var
+mulherSalario, homemSalario: real
+salario: real
+continuar, sexo: caractere
+inicio
+// Seção de Comandos
+continuar <- "S"
+mulherSalario <- 0
+homemSalario <- 0
+   escreval("------------------------------------")
+   escreval("        APLICATIVO DE SÁLARIO       ")
+   escreval("------------------------------------")
+   enquanto (continuar = "S") ou (continuar = "s") faca
+   escreva("Qual o seu salário? R$")
+   leia(salario)
+   escreva("Qual o seu sexo? [H/M] ")
+   leia(sexo)
+   se (sexo = "H") ou (sexo = "h") entao
+   homemSalario <- homemSalario + salario
+   senao
+        se (sexo = "M") ou (sexo = "m") entao
+        mulherSalario <- mulherSalario + salario
+        fimSe
+   fimSe
+   escreva("Deseja continuar? ")
+   leia(continuar)
+   escreval("------------------------------------")
+fimEnquanto
+escreval("Somatório dos sálarios dos homens: ", homemSalario)
+escreval("Somatório dos sálarios das mulheres: ", mulherSalario)
+fimalgoritmo

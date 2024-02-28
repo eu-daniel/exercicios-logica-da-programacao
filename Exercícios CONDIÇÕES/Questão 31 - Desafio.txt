@@ -1,0 +1,42 @@
+algoritmo "Questão 31 - Desafio"
+// Função :
+// Autor :
+// Data : 21/11/2023
+// Seção de Declarações
+var
+   primeiro, segundo: caractere
+inicio
+// Seção de Comandos
+      Escreval("--------------------------------")
+      Escreva(" JOGO DE PEDRA - PAPEL - TESOURA ")
+      Escreval("--------------------------------")
+      Escreval(" [PEDRA] ")
+      Escreval(" [PAPEL] ")
+      Escreval("[TESOURA]")
+      Escreval("--------------------------------")
+      Escreva("Informe o primeiro: ")
+      leia(primeiro)
+      Escreva("Informe o segundo: ")
+      leia(segundo)
+      se (primeiro = "PEDRA") e (segundo = "TESOURA") entao
+         Escreva("[PEDRA] GANHOU!")
+      senao
+           se(primeiro = "TESOURA") e (segundo = "PEDRA") entao
+              Escreva("[PEDRA] GANHOU!")
+           senao
+                se(primeiro = "TESOURA") e (segundo = "PAPEL") entao
+                   Escreva("[TESOURA] GANHOU!")
+                senao
+                   se(primeiro = "PAPEL") e (segundo = "TESOURA") entao
+                      Escreva("[TESOURA] GANHOU!")
+                   senao
+                        se(primeiro = "PAPEL") e (segundo = "PEDRA") entao
+                           Escreva("[PAPEL] GANHOU!")
+                        senao
+                           Escreva("[PAPEL] GANHOU!")
+                        fimSe
+                   fimSe
+                fimSe
+           fimSe
+      fimSe
+fimalgoritmo

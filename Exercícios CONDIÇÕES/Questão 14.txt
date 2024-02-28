@@ -1,0 +1,20 @@
+algoritmo "Questão 14"
+// Função :
+// Autor :
+// Data : 23/11/2023
+// Seção de Declarações
+var
+   km, dias, total: real
+inicio
+// Seção de Comandos
+         escreval("-------------------------------")
+         escreval("  LOCADORA DE CARROS GIRASSOL  ")
+         escreval("-------------------------------")
+         escreva("Quantidade de Kms percorridos: ")
+         leia(km)
+         escreva("Quantidade de dias alugados: ")
+         leia(dias)
+         escreval("-------------------------------")
+         total <- (km*0.20)+(dias*90)
+         escreva("O total a ser pago será de R$",total)
+fimalgoritmo

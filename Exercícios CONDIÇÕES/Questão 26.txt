@@ -1,0 +1,23 @@
+algoritmo "Questão 26"
+// Função :
+// Autor :
+// Data : 21/11/2023
+// Seção de Declarações 
+var
+   n1, n2: inteiro
+inicio
+// Seção de Comandos
+   Escreva("Digite o primeiro número: ")
+   leia(n1)
+   Escreva("Digite o segundo número: ")
+   leia(n2)
+   se (n1 > n2) entao
+   Escreva("O primeiro valor é maior.")
+   senao
+   se (n1 = n2) entao
+   Escreva("Não existe valor maior, os dois são iguais.")
+   senao
+   Escreva("O segundo valor é maior.")
+   fimSe
+   fimSe
+fimalgoritmo

@@ -1,0 +1,16 @@
+algoritmo "Questão 6"
+// Função :
+// Autor :
+// Data : 23/11/2023
+// Seção de Declarações
+var
+   n1, antes, depois: inteiro
+inicio
+// Seção de Comandos
+         escreva("Digite um número: ")
+         leia(n1)
+         antes <- n1 - 1
+         depois <- n1 + 1
+         escreval("O antecessor de", n1, " é", antes)
+         escreval("O sucessor de", n1, " é", depois)
+fimalgoritmo

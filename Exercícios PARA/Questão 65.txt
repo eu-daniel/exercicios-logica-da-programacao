@@ -1,0 +1,14 @@
+algoritmo "Questão 65"
+// Função :
+// Autor :
+// Data : 08/12/2023
+// Seção de Declarações 
+var
+   cont: inteiro
+inicio
+// Seção de Comandos
+para cont <- 100 ate 0 passo -10 faca
+escreva(cont)
+fimPara
+escreva(" Acabou!")
+fimalgoritmo

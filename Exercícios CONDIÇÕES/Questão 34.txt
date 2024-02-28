@@ -1,0 +1,35 @@
+algoritmo "Questão 34"
+// Função :
+// Autor :
+// Data : 21/11/2023
+// Seção de Declarações
+var
+   altura, peso, imc: real
+inicio
+// Seção de Comandos
+      Escreval("--------------------------------")
+      Escreval("                IMC              ")
+      Escreval("--------------------------------")
+      Escreva("Informe sua altura: ")
+      leia(altura)
+      Escreva("Informe seu peso: ")
+      leia(peso)
+      imc <- peso/(altura^2)
+      se(imc < 18.5) entao
+         escreval("ABAIXO DO PESO.")
+         senao
+              se(imc >= 18.5) e (imc < 25) entao
+                 escreval("PESO IDEAL.")
+                 senao
+                      se(imc >= 25) e (imc < 30) entao
+                         escreval("SOBREPESO.")
+                         senao
+                              se(imc >= 30) e (imc < 40) entao
+                                 escreval("OBESIDADE.")
+                                 senao
+                                 escreval("OBESIDADE MÓRBIDA.")
+                              fimSe
+                      fimSe
+              fimSe
+      fimSe
+fimalgoritmo

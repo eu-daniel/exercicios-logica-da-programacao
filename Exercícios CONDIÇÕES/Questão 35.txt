@@ -1,0 +1,41 @@
+algoritmo "Questão 35"
+// Função :
+// Autor :
+// Data : 21/11/2023
+// Seção de Declarações
+var
+tipoCarro: caractere
+diasAluguel: inteiro
+kmPercorridos, valorP, valorL: real
+inicio
+// Seção de Comandos
+Escreval("--------------------------------")
+Escreval("        ALUGUEL DE CARROS       ")
+Escreval("--------------------------------")
+Escreval("[1] - Carro Popular")
+Escreval("[2] - Carro de Luxo")
+Escreva("Informe o carro pretendido [1] ou [2]: ")
+leia(tipoCarro)
+Escreva("Informe o número de dias: ")
+leia(diasAluguel)
+Escreva("Informe os Km percorridos: ")
+leia(kmPercorridos)
+escolha tipoCarro
+caso "1"
+   se(kmPercorridos < 100) entao
+      valorP <- (90*diasAluguel)+(kmPercorridos*0.20)
+      escreva("O valor total ficará, ", valorP)
+      senao
+      valorP <- (90*diasAluguel)+(kmPercorridos*0.10)
+      escreva("O valor total ficará R$", valorP)
+   fimSe
+caso "2"
+   se(kmPercorridos < 200) entao
+      valorL <- (150*diasAluguel)+(kmPercorridos*0.30)
+      escreva("O valor total ficará R$",valorL)
+   senao
+      valorL <- (150*diasAluguel)+(kmPercorridos*0.25)
+      escreva("O valor total ficará R$",valorL)
+   fimSe
+fimEscolha
+fimalgoritmo

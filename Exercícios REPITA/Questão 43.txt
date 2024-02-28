@@ -1,0 +1,20 @@
+algoritmo "Questão 43"
+// Função :
+// Autor :
+// Data : 05/12/2023
+// Seção de Declarações
+var
+   cont, divisao: inteiro
+inicio
+// Seção de Comandos
+cont <- 31
+Repita
+      cont <- cont - 1
+      se(cont mod 4 = 0)entao
+      divisao <- cont
+      escreva(" [",cont," ]")
+      senao
+           escreva(cont)
+      fimSe
+      ate(cont = 1)
+fimalgoritmo

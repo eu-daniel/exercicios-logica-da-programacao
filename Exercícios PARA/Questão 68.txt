@@ -1,0 +1,39 @@
+algoritmo "Questão 68"
+// Função :
+// Autor :
+// Data : 08/12/2023
+// Seção de Declarações
+// Seção de Declarações
+var
+   cont, peso, mulheresCadastradas, somaMulheres: inteiro
+   maiorPeso, maior100: inteiro
+   sexo: caractere
+   mediaMulheres: real
+inicio
+// Seção de Comandos
+cont <- 0
+para cont := 0 ate 7 faca
+escreva("Informe o sexo: ")
+leia(sexo)
+escreva("Informe o peso: ")
+leia(peso)
+cont <- cont + 1
+     se(sexo = "M") ou (sexo = "m")entao
+     mulheresCadastradas <- mulheresCadastradas + 1
+     somaMulheres <- peso + somaMulheres
+     mediaMulheres <- somaMulheres/mulheresCadastradas
+     fimSe
+     se(sexo = "H") ou (sexo = "h")entao
+        se(peso > 100)entao
+        maior100 <- maior100 + 1
+           se(peso > maiorPeso)entao
+           maiorPeso <- peso
+           fimSe
+        fimSe
+     fimSe
+fimPara
+escreval("Nº de mulheres cadastradas: ", mulheresCadastradas)
+escreval("Quantidade de homens que pesam mais de 100kg: ",maior100)
+escreval("Média de peso entre as mulheres: ",mediaMulheres)
+escreval("O maior peso entre os homens: ",maiorPeso)
+fimalgoritmo

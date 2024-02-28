@@ -1,0 +1,14 @@
+algoritmo "Questão 9"
+// Função :
+// Autor :
+// Data : 23/11/2023
+// Seção de Declarações
+var
+   saldo, dolar: real
+inicio
+// Seção de Comandos
+         escreva("Digite o seu saldo em R$: ")
+         leia(saldo)
+         dolar <- saldo/3.45
+         escreval("Você pode comprar US$: ", dolar)
+fimalgoritmo

@@ -1,0 +1,35 @@
+algoritmo "Questão 52"
+// Função :
+// Autor :
+// Data : 07/12/2023
+// Seção de Declarações 
+var
+   cont, idade, maior18, somaIdades, menor5, maiorIdade: inteiro
+   mediaIdade: real
+inicio
+// Seção de Comandos
+   cont <- 0
+   maiorIdade <- 1
+   repita
+         escreva("Escreva a idade: ")
+         leia(idade)
+         cont <- cont + 1
+         somaIdades <- somaIdades + idade
+              se(idade > 18)entao
+                 maior18 <- maior18 + 1
+              senao
+                   se(idade < 5)entao
+                      menor5 <- menor5 + 1
+                   fimSe
+              fimSe
+                        se(idade > maiorIdade)entao
+                           maiorIdade <- idade
+                        fimSe
+   ate(cont = 3)
+   mediaIdade <- somaIdades/cont
+   escreval("Média de idade do grupo:",mediaIdade)
+   escreval("Pessoas com mais de 18 anos:",maior18)
+   escreval("Pessoas com menos de 5 anos:",menor5)
+   escreval("Maior idade lida: ",maiorIdade)
+
+fimalgoritmo

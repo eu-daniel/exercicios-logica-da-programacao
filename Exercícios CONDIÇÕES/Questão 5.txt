@@ -1,0 +1,16 @@
+algoritmo "Questão 5"
+// Função :
+// Autor :
+// Data : 23/11/2023
+// Seção de Declarações
+var
+   n1, n2, media: real
+inicio
+// Seção de Comandos
+         escreva("Nota 1: ")
+         leia(n1)
+         escreva("Digite outro valor: ")
+         leia(n2)
+         media <- (n1+n2)/2
+         escreva("A média entre", n1, " e", n2, " é", media)
+fimalgoritmo

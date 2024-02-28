@@ -1,0 +1,39 @@
+algoritmo "Questão 63"
+// Função :
+// Autor :
+// Data : 03/12/2023
+// Seção de Declarações
+var
+contador, num, somaValores, valoresPares, menorValor: inteiro
+media: real
+continuar: caractere
+inicio
+// Seção de Comandos
+contador <- 0
+somaValores <- 0
+continuar <- "S"
+menorValor <- 9999999
+//
+enquanto (continuar >= "S") faca
+   escreva("Informe o número: ")
+   leia(num)
+   somaValores <- somaValores + num
+   contador <- contador + 1
+   //
+   se(num < menorValor) entao
+      menorValor <- num
+   fimSe
+   //
+   se(num % 2 = 0) entao
+   valoresPares <- ValoresPares + 1
+   fimSe
+   escreva("Deseja continuar? [S/N]")
+   leia(continuar)
+   //
+   media <- somaValores/contador
+fimEnquanto
+escreval("Somatório entre todos os valores: ", somaValores)
+escreval("Menor valor digitado: ", menorValor)
+escreval("Média dos valores: ", media)
+escreval("Valores pares: ", valoresPares)
+fimalgoritmo

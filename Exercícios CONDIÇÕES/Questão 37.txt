@@ -1,0 +1,52 @@
+algoritmo "Questão 37"
+// Função :
+// Autor :
+// Data : 21/11/2023
+// Seção de Declarações
+var
+   salAtual, anosM: real
+   gen: caractere
+   anosTrabalhados: inteiro
+inicio
+// Seção de Comandos
+Escreval("--------------------------------")
+Escreval("       AUMENTO DE SALÁRIO       ")
+Escreval("--------------------------------")
+Escreva("Informe o salário atual: ")
+leia(salAtual)
+Escreval("--------------------------------")
+Escreval("        [M] - Mulheres          ")
+Escreval("         [H] - Homens           ")
+Escreval("--------------------------------")
+Escreva("Informe seu Genêro: ")
+leia(gen)
+escreva("Anos trabalhados na empresa: ")
+leia(anosTrabalhados)
+escolha verdadeiro
+caso(gen = "M")
+     se(anosTrabalhados < 15) entao
+     anosM <- (salAtual*(5/100))+salAtual
+           senao
+                se(anosTrabalhados >= 15) e (anosTrabalhados < 20) entao
+                   anosM <- (salAtual*(12/100))+salAtual
+                   senao
+                        se(anosTrabalhados >= 20) entao
+                           anosM <- (salAtual*(23/100))+salAtual
+                        fimSe
+                fimSe
+     fimSe
+caso(gen = "H")
+     se(anosTrabalhados < 20) entao
+     anosM <- (salAtual*(3/100))+salAtual
+           senao
+                se(anosTrabalhados >= 20) e (anosTrabalhados < 30) entao
+                   anosM <- (salAtual*(13/100))+salAtual
+                   senao
+                        se(anosTrabalhados >= 30) entao
+                           anosM <- (salAtual*(25/100))+salAtual
+                        fimSe
+                fimSe
+     fimSe
+fimEscolha
+      escreval("Seu novo salário será: ", anosM)
+fimalgoritmo

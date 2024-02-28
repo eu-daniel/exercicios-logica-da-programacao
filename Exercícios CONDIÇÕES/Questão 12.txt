@@ -1,0 +1,19 @@
+algoritmo "Questão 12"
+// Função :
+// Autor :
+// Data : 23/11/2023
+// Seção de Declarações
+var
+   a, desconto: real
+inicio
+// Seção de Comandos
+         escreval("----------------------")
+         escreval("    DESCONTO DE 5%    ")
+         escreval("----------------------")
+         escreva("Digite o valor do produto: ")
+         leia(a)
+         escreval("----------------------")
+         desconto <- (a*5/100)
+         desconto <- a-desconto
+         escreva("O valor: R$",a," com desconto de 5%, ficará de: R$",desconto)
+fimalgoritmo

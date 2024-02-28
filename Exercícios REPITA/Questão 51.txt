@@ -1,0 +1,26 @@
+algoritmo "Questão 51"
+// Função :
+// Autor :
+// Data : 07/12/2023
+// Seção de Declarações 
+var
+   cont, preco, maiorPreco, menorPreco: inteiro
+inicio
+// Seção de Comandos
+   cont <- 0
+   preco <- 0
+   menorPreco <- 9999
+   repita
+         escreva("Escreva o preço: ")
+         leia(preco)
+         cont <- cont + 1
+         se(preco < menorPreco)entao
+            menorPreco <- preco
+         fimSe
+              se(preco > maiorPreco)entao
+                 maiorPreco <- preco
+              fimSe
+   ate(cont = 8)
+   escreval("Maior preço digitado: R$",maiorPreco)
+   escreval("Menor preço digitado: R$",menorPreco)
+fimalgoritmo

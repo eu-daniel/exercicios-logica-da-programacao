@@ -1,0 +1,24 @@
+algoritmo "Questão 25"
+//
+var
+   r1, r2, r3: inteiro
+inicio
+// Seção de Comandos
+Escreval("-------------------")
+Escreva("Informe a primeira reta: ")
+leia(r1)
+Escreval("-------------------")
+Escreva("Informe a segunda reta: ")
+leia(r2)
+Escreval("-------------------")
+Escreva("Informe a terceira reta: ")
+leia(r3)
+Escreval("-------------------")
+se (r1 < (r2 + r3)) e (r2 < (r1 + r3)) e (r3 < (r1 + r2)) entao
+Escreva("É possível formar um triângulo")
+senao
+Escreval("NÃO É POSSÍVEL.")
+
+Escreval("-------------------")
+fimSe
+fimalgoritmo

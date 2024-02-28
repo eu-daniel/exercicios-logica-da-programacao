@@ -1,0 +1,43 @@
+algoritmo "Questão 54"
+// Função :
+// Autor :
+// Data : 03/12/2023
+// Seção de Declarações
+var
+contadorPessoas, maior90, acima100, menos50: inteiro
+mediaAlturaGrupo, alturaAtual, somaAltura, pesoAtual: real
+inicio
+// Seção de Comandos
+contadorPessoas <- 0
+acima100 <- 0
+menos50 <- 0
+maior90 <- 0
+//
+   escreval("--------------------------------")
+   escreval("            APLICATIVO          ")
+   escreval("--------------------------------")
+   enquanto (contadorPessoas < 7) faca
+   escreva("Informe sua altura: ")
+   leia(alturaAtual)
+   escreva("Informe o seu peso: ")
+   leia(pesoAtual)
+   escreval("-----------------------------------")
+   contadorPessoas <- contadorPessoas + 1
+   somaAltura <- somaAltura + alturaAtual
+   //média de altura
+   se(pesoAtual >= 90) entao
+      maior90 <- maior90 + 1
+   fimSe
+   se(alturaAtual < 160) e (pesoAtual < 50)entao
+   menos50 <- menos50 + 1
+   fimSe
+   se (pesoAtual >= 100) e (alturaAtual >= 190) entao
+   acima100 <- acima100 + 1
+   fimSe
+fimEnquanto
+   mediaAlturaGrupo <- (somaAltura/contadorPessoas)
+   escreval("Média de altura: ", mediaAlturaGrupo)
+   escreval("Pessoas que pesam mais de 90kg: ", maior90)
+   escreval("Pessoas que pesam menos de 50Kg tem menos de 1.60m: ", menos50)
+   escreval("pessoas que medem mais de 1.90m pesam mais de 100Kg: ", acima100)
+fimalgoritmo

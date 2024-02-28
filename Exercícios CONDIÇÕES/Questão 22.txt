@@ -1,0 +1,19 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 21/11/2023
+// Seção de Declarações 
+var
+  ano, falt, falt2: inteiro
+inicio
+// Seção de Comandos
+Escreva("Informe o seu ano de nascimento: ")
+leia(ano)
+falt <- 2023-ano
+falt2 <- 2023-ano-18
+se (falt < 18) entao
+Escreva("Faltam ", falt, " anos para você se alistar.")
+senao
+Escreva("Você se alistou há ", falt2, " anos.")
+fimSe
+fimalgoritmo

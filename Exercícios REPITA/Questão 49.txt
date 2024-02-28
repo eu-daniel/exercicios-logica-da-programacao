@@ -1,0 +1,23 @@
+algoritmo "Questão 49"
+// Função :
+// Autor :
+// Data : 07/12/2023
+// Seção de Declarações 
+var
+   cont, num, numPar, numImpar: inteiro
+inicio
+// Seção de Comandos
+   cont <- 0
+   repita
+         escreva("Escreva um número: ")
+         leia(num)
+         cont <- cont + 1
+         se(num mod 2 = 0)entao
+         numPar <- numPar + 1
+         senao
+         numImpar <- numImpar + 1
+         fimSe
+   ate(cont = 6)
+   escreval("Quantidade de números pares são: ", numPar)
+   escreval("Quantidade de números ímpares são: ", numImpar)
+fimalgoritmo

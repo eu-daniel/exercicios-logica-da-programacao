@@ -1,0 +1,16 @@
+algoritmo "Questão 61"
+// Função :
+// Autor :
+// Data : 30/11/2023
+// Seção de Declarações 
+var
+   cont: inteiro
+inicio
+// Seção de Comandos
+   cont <- 0
+   enquanto (cont <= 30) faca
+   escreva(cont)
+   cont <- cont + 3
+   fimEnquanto
+   escreva(" Acabou!")
+fimalgoritmo

@@ -1,0 +1,30 @@
+algoritmo "Questão 29"
+// Função :
+// Autor :
+// Data : 21/11/2023
+// Seção de Declarações 
+var
+   nome: caractere
+   sal, a1, a2, a3: real
+   anos: inteiro
+inicio
+// Seção de Comandos
+   Escreva("NOME: ")
+   leia(nome)
+   Escreva("Sálario: ")
+   leia(sal)
+   Escreva("Anos de trabalho: ")
+   leia(anos)
+   a1 <- (sal * (3/100)) + sal
+   a2 <- (sal * (12.5/100)) + sal
+   a3 <- (sal * (20/100)) + sal
+   se (anos < 3) entao
+   Escreva("O seu novo sálario será: R$", a1)
+   senao
+   se (anos >= 3) e (anos < 10) entao
+   Escreva("O seu novo sálario será: R$", a2)
+   senao
+   Escreva("O seu novo sálario será: R$", a3)
+   fimSe
+   fimSe
+fimalgoritmo

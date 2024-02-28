@@ -1,0 +1,19 @@
+algoritmo "Questão 24"
+//
+var
+   km, pas, pas2: real
+inicio
+// Seção de Comandos
+Escreva("Qual distância deseja percorrer em KM? ")
+leia(km)
+Escreval("-------------------")
+pas <- km * 0.50
+pas2 <- km * 0.45
+se (km <= 200) entao
+Escreva("Valor da passagem: ", pas)
+senao
+Escreval("-------------------")
+Escreval("Valor da passagem: ", pas2)
+Escreval("-------------------")
+fimSe
+fimalgoritmo

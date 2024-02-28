@@ -1,0 +1,32 @@
+algoritmo "Questão 36"
+// Função :
+// Autor :
+// Data : 21/11/2023
+// Seção de Declarações
+var
+   numHoras, dinheiro: real
+   pontos: real
+inicio
+// Seção de Comandos
+Escreval("--------------------------------")
+Escreval("          VIDA SAUDÁVEL         ")
+Escreval("--------------------------------")
+Escreval("      10 horas - 2 pontos       ")
+Escreval(" Entre 10 e 20 horas - 5 pontos ")
+Escreval("   Acima 20 horas - 10 pontos   ")
+Escreval("--------------------------------")
+Escreva("Informe o número de horas: ")
+leia(numHoras)
+escolha verdadeiro
+caso(numHoras <= 10)
+     pontos <- (numHoras*2)
+caso(numHoras > 10) e (numHoras < 20)
+     pontos <- (numHoras*5)
+caso(numHoras >= 20)
+     pontos <- (numHoras*10)
+fimEscolha
+      dinheiro <- pontos*0.05
+      escreval("Você efetuou",numHoras," horas de atividade física esse mês.")
+      escreval("Você obteve:",pontos," pontos.")
+      escreval("Você conseguiu ganhar",dinheiro," reais nesse mês.")
+fimalgoritmo

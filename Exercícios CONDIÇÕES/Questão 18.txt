@@ -1,0 +1,21 @@
+algoritmo "semnome"
+//
+var
+ ano_nasc, ano_atual, idade: real
+inicio
+Escreval("--------------------")
+Escreva("Informe seu ano de nascimento: ")
+leia (ano_nasc)
+Escreva("Informe o ano atual: ")
+leia (ano_atual)
+Escreval("-------RESULTADO------")
+idade <- ano_atual - ano_nasc
+Escreval("Sua idade é: ", idade)
+Escreval("--------------------")
+se (idade > 18) entao
+Escreval("VOCÊ POSSUI ", idade, " ANOS E PODE VOTAR.")
+senao
+   Escreval("VOCÊ NÃO PODE VOTAR.")
+   Escreval("--------------------")
+fimSE
+fimalgoritmo

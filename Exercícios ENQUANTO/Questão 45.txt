@@ -1,0 +1,20 @@
+algoritmo "Questão 45"
+
+var
+   valor: inteiro
+   cont: real
+inicio
+// Seção de Comandos
+cont <- 1
+     enquanto (cont <= 6) faca
+     escreva("Digite um valor: ")
+     leia(valor)
+     cont <- cont + 1
+     fimEnquanto
+     cont <- (valor % 2 = 0)
+     escreva("Os números pares são:",cont)
+     cont <- cont + 1
+          senao
+               escreva("Os números ímpares são:",valor)
+     fimSe
+fimalgoritmo

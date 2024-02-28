@@ -1,0 +1,28 @@
+algoritmo "Questão 30"
+//
+var
+   r1, r2, r3: inteiro
+inicio
+// Seção de Comandos
+Escreval("-------------------")
+Escreva("Informe a primeira reta: ")
+leia(r1)
+Escreval("-------------------")
+Escreva("Informe a segunda reta: ")
+leia(r2)
+Escreval("-------------------")
+Escreva("Informe a terceira reta: ")
+leia(r3)
+Escreval("-------------------")
+se (r1 = r2) e (r2 = r3) entao
+Escreva("EQUILATERO")
+senao
+se (r1 = r2) e (r2 <> r3) entao
+Escreval("ISÓSCELES")
+senao
+se (r1 <> r2) e (r2 <> r3) entao
+Escreva("ESCALENO")
+fimSe
+fimSe
+fimSe
+fimalgoritmo

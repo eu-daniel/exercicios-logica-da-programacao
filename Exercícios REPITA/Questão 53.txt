@@ -1,0 +1,45 @@
+algoritmo "Questão 53"
+// Função :
+// Autor :
+// Data : 07/12/2023
+// Seção de Declarações 
+var
+   cont, idade, homensCadastrados, maior20, maiorIdade: inteiro
+   mulheresCadastradas, somaIdades, somaHomens: inteiro
+   mediaIdade, mediaHomens: real
+   sexo: caractere
+inicio
+// Seção de Comandos
+   cont <- 0
+   repita
+         escreva("Escreva a idade: ")
+         leia(idade)
+         escreva("Informe seu sexo: ")
+         leia(sexo)
+         cont <- cont + 1
+         somaIdades <- idade + somaIdades
+              se(sexo = "H") ou (sexo = "h")entao
+                 homensCadastrados <- homensCadastrados + 1
+                 somaHomens <- somaHomens + idade
+              senao
+                   se(sexo = "M") ou (sexo = "m")entao
+                      mulheresCadastradas <- mulheresCadastradas + 1
+                      se(idade > 20)entao
+                      maior20 <- maior20 + 1
+                      fimSe
+                   fimSe
+              fimSe
+                        se(idade > maiorIdade)entao
+                           maiorIdade <- idade
+                        fimSe
+   ate(cont = 3)
+   mediaIdade <- somaIdades/cont
+   se(homensCadastrados <> 0)entao
+   mediaHomens <- somaHomens/homensCadastrados
+   fimSe
+   escreval("Nº de homens cadastrados:",homensCadastrados)
+   escreval("Nº de mulheres cadastradas:",mulheresCadastradas)
+   escreval("Média de idade do grupo:",mediaIdade)
+   escreval("Média de idade dos homens: ",mediaHomens)
+   escreva("Nº de mulheres com mais de 20 anos:",maior20)
+fimalgoritmo

@@ -1,0 +1,32 @@
+algoritmo "Questão 62"
+// Função :
+// Autor :
+// Data : 03/12/2023
+// Seção de Declarações
+var
+contador, idade, soma, maior21: inteiro
+media: real
+continuar: caractere
+inicio
+// Seção de Comandos
+contador <- 0
+soma <- 0
+continuar <- "S"
+//
+enquanto (continuar >= "S") faca
+   escreva("Informe sua idade: ")
+   leia(idade)
+   soma <- soma + idade
+   contador <- contador + 1
+   //
+   escreva("Deseja continuar? [S/N]")
+   leia(continuar)
+   //
+   se(idade >= 21) entao
+      maiores21 <- maiores21 + 1
+   fimSe
+fimEnquanto
+escreval("O número de idades digitadas foi: ", soma)
+escreval("A média entre as idades é de: ", soma/contador)
+escreval("Pessoas que possuem mais de 21 anos: ", maiores21)
+fimalgoritmo

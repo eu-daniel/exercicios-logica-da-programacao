@@ -1,0 +1,16 @@
+algoritmo "Questão 39"
+// Função :
+// Autor :
+// Data : 05/12/2023
+// Seção de Declarações 
+var
+   cont: inteiro
+inicio
+// Seção de Comandos
+cont <- 10
+    Repita
+          escreva(cont)
+    cont <- cont - 1
+    ate (cont < 3)
+    escreva(" Acabou!")
+fimalgoritmo

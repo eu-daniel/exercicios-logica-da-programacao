@@ -1,0 +1,10 @@
+algoritmo "Olá Mundo"
+// Função :
+// Autor :
+// Data : 23/11/2023
+// Seção de Declarações 
+var
+inicio
+// Seção de Comandos
+         escreva("Olá mundo")
+fimalgoritmo

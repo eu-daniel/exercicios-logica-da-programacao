@@ -1,0 +1,42 @@
+algoritmo "Questão - 60"
+// Função :
+// Autor :
+// Data : 08/12/2023
+// Seção de Declarações 
+var
+    nome, sexo, continuar: caractere
+    idade, maiorIdade, menorIdade, pessoasCadastradas: inteiro
+    somaIdades: inteiro
+    mediaGrupo: real
+inicio
+// Seção de Comandos
+maiorIdade <- 0
+menorIdade <- 9999
+somaIdades <- 0
+repita
+      escreva("Informe seu nome: ")
+      leia(nome)
+      escreva("Informe sua idade: ")
+      leia(idade)
+      escreva("Informe seu sexo: ")
+      leia(sexo)
+      pessoasCadastradas <- pessoasCadastradas + 1
+      se(idade > maiorIdade)entao
+      maiorIdade <- idade
+      senao
+           se(sexo = "M") ou (sexo = "m")entao
+              se(idade < menorIdade) e (sexo = "M")entao
+                 menorIdade <- idade
+              fimSe
+           fimSe
+      fimSe
+      somaIdades <- somaIdades + idade
+      mediaGrupo <- somaIdades/pessoasCadastradas
+      escreva("Deseja continuar?")
+      leia(continuar)
+      escreval("----------------------------------")
+ate(continuar = "N")
+escreval("A pessoa mais velha possui: ",maiorIdade," anos.")
+escreval("A mulher mais jovem possui: ",menorIdade," anos.")
+escreval("Média de idade do grupo: ",mediaGrupo)
+fimalgoritmo

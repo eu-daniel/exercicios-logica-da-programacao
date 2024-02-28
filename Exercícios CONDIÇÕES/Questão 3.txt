@@ -1,0 +1,17 @@
+algoritmo "Questão 3"
+// Função :
+// Autor :
+// Data : 23/11/2023
+// Seção de Declarações 
+var
+   nome: caractere
+   sal: real
+inicio
+// Seção de Comandos
+         escreva("Nome do Funcionário: ")
+         leia(nome)
+         escreva("Salário: ")
+         leia(sal)
+         escreva("A funcionária ", nome, " tem um salário de", sal, " em Junho.")
+         
+fimalgoritmo

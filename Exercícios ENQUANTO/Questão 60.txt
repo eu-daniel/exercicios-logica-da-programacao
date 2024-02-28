@@ -1,0 +1,60 @@
+algoritmo "Questão 60"
+// Função :
+// Autor :
+// Data : 04/12/2023
+// Seção de Declarações
+var
+nome, sexo, continuar: caractere
+maiorIdade, idade, menor18, menorIdadeMulher, maior30, cont, somaIdades: inteiro
+mediaHomens, mediaMulheres, mediaIdade: real
+inicio
+// Seção de Comandos
+continuar <- "S"
+menorIdadeMulher <- 9999
+cont <- 0
+menor18 <- 0
+maior30 <- 0
+enquanto (continuar = "S") faca
+   escreva("Informe seu nome: ")
+   leia(nome)
+   escreva("Informe sua idade: ")
+   leia(idade)
+   escreva("Informe seu sexo: ")
+   leia(sexo)
+   cont <- cont + 1
+   //Soma de todas as Idades
+   somaIdades <- somaIdades + idade
+   //Armazenar idade da pessoa mais velha:
+   se(idade > maiorIdade) entao
+      maiorIdade <- idade
+   fimSe
+   //Armazenar idade da mulher mais jovem
+   se(sexo = "M") ou (sexo = "m") entao
+      se(idade < menorIdadeMulher) entao
+         menorIdadeMulher <- idade
+         //Quantidade de mulheres com menos de 18 anos
+         se(idade < 18) entao
+            menor18 <- menor18 + 1
+         fimSe
+      fimSe
+   fimSe
+   se(sexo = "H") ou (sexo = "h") entao
+      //Homens com mais de 30 anos
+      se(idade > 30) entao
+         maior30 <- maior30 + 1
+      fimSe
+   fimSe
+   escreva("Deseja continuar? ")
+   leia(continuar)
+   escreval("------------------------------------")
+fimEnquanto
+//Média de idade do grupo cadastrados
+mediaIdade <- (somaIdades/cont)
+escreval("Pessoa mais velha: ", maiorIdade)
+se(menorIdadeMulher <> 9999) entao
+   escreval("Mulher mais jovem: ", menorIdadeMulher)
+fimSe
+escreval("Média de idade do grupo: ", mediaIdade)
+escreval("Homens com mais de 30: ", maior30)
+escreval("Mulheres com menos de 18: ", menor18)
+fimalgoritmo

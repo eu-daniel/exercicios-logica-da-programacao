@@ -1,0 +1,21 @@
+algoritmo "Questão 11"
+// Função :
+// Autor :
+// Data : 23/11/2023
+// Seção de Declarações
+var
+   a, b, c, delta: real
+inicio
+// Seção de Comandos
+         escreval("----------------------")
+         escreval("  EQUAÇÃO DE 2º GRAU  ")
+         escreval("----------------------")
+         escreva("Informe o valor de A: ")
+         leia(a)
+         escreva("Informe o valor de B: ")
+         leia(b)
+         escreva("Informe o valor de C: ")
+         leia(c)
+         delta <- (b^2)-(4*a*c)
+         escreval("Valor de Delta: ", delta)
+fimalgoritmo

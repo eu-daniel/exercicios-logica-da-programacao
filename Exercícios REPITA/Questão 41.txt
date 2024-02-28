@@ -1,0 +1,16 @@
+algoritmo "Questão 41"
+// Função :
+// Autor :
+// Data : 05/12/2023
+// Seção de Declarações 
+var
+   cont: inteiro
+inicio
+// Seção de Comandos
+cont <- 100
+    Repita
+          escreva(cont)
+    cont <- cont - 5
+    ate (cont < 0)
+    escreva(" Acabou!")
+fimalgoritmo

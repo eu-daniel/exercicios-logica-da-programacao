@@ -1,0 +1,52 @@
+algoritmo "Questão 53"
+// Função :
+// Autor :
+// Data : 03/12/2023
+// Seção de Declarações
+var
+contadorPessoas, idadeAtual, somaIdades, somaIdadesHomens, numHomens, numMulheres, numMulheresAcima20: inteiro
+sexoAtual: caractere
+mediaIdadeGrupo, mediaIdadeHomens: real
+inicio
+// Seção de Comandos
+contadorPessoas <- 0
+numHomens <- 0
+numMulheres <- 0
+numMulheresAcima20 <- 0
+somaIdadesHomens <- 0
+//
+   escreval("         BANCO DE DADOS         ")
+enquanto (contadorPessoas < 5) faca
+   escreva("Informe sua idade: ")
+   leia(idadeAtual)
+   escreva("Informe o sexo: [H]/[M]")
+   leia(sexoAtual)
+   contadorPessoas <- contadorPessoas + 1
+   escreval("-----------------------------------")
+   //número de homens cadastrados
+   se(sexoAtual = "H") ou (sexoAtual = "h") entao
+   numHomens <- numHomens + 1
+   somaIdadesHomens <- somaIdadesHomens + idadeAtual
+   fimSe
+   //Mulheres acima de 20
+        se(sexoAtual = "M") ou (sexoAtual = "m") entao
+        numMulheres <- numMulheres + 1
+             se (idadeAtual > 20) entao
+             numMulheresAcima20 <- numMulheresAcima20 + 1
+             fimSe
+        fimSe
+//media do grupo
+   somaIdades <- somaIdades + idadeAtual
+   mediaIdadeGrupo <- (somaIdades/contadorPessoas)
+//media dos homens
+   se(somaIdadesHomens <> 0) entao
+   mediaIdadeHomens <- somaIdadesHomens/numHomens
+   fimSe
+fimEnquanto
+   escreval("Numero de homens cadastrados: ", numHomens)
+   escreval("Numero de mulheres: ", numMulheres)
+   escreval("Média de idade do grupo: ", mediaIdadeGrupo)
+   escreval("Média de idade entre homens: ", mediaIdadeHomens)
+   escreval("Mulheres acima de 20: ", numMulheresAcima20)
+fimalgoritmo
+

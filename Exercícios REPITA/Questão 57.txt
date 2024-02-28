@@ -1,0 +1,32 @@
+algoritmo "Questão 57"
+// Função :
+// Autor :
+// Data : 08/12/2023
+// Seção de Declarações 
+var
+   sexo, continuar: caractere
+   totalSalarioH, totalSalarioM, salario: inteiro
+inicio
+// Seção de Comandos
+
+repita
+   escreva("Informe seu salário: R$")
+   leia(salario)
+   escreval("    H - Homem    ")
+   escreval("    M - Mulher   ")
+   escreva("Informe seu sexo: ")
+   leia(sexo)
+   se(sexo = "H") ou (sexo = "h")entao
+   totalSalarioH <- totalSalarioH + salario
+      senao
+           se(sexo = "M") ou (sexo = "m")entao
+           totalSalarioM <- totalSalarioM + salario
+           fimSe
+   fimSe
+   escreva("Deseja continuar? [S/N]")
+   leia(continuar)
+   escreval("------------------------------------------")
+ate(continuar = "N")
+escreval("O total de salários de homens é de: ",totalSalarioH)
+escreval("O total de salários de mulheres é de: ",totalSalarioM)
+fimalgoritmo

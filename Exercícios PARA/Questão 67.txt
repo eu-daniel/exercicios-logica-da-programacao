@@ -1,0 +1,19 @@
+algoritmo "Questão 67"
+// Função :
+// Autor :
+// Data : 08/12/2023
+// Seção de Declarações
+// Seção de Declarações
+var
+   cont, num, resultado: inteiro
+inicio
+// Seção de Comandos
+cont <- 1
+escreva("Informe um número: ")
+leia(num)
+para cont := 0 ate num faca
+escreva(cont,",")
+cont <- cont + 1
+fimPara
+escreva(" FIM!")
+fimalgoritmo

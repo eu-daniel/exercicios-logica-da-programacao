@@ -1,0 +1,25 @@
+algoritmo "Questão 8"
+// Função :
+// Autor :
+// Data : 23/11/2023
+// Seção de Declarações
+var
+   n1, km, hm, dam, dm, cm, mm: real
+inicio
+// Seção de Comandos
+         escreva("Digite a distância em metros: ")
+         leia(n1)
+         km <- n1/1000
+         hm <- n1/100
+         dam <- n1/10
+         dm <- n1*10
+         cm <- n1*100
+         mm <- n1*1000
+         escreval("A distância de", n1, "m corresponde a: ")
+         escreval(km, "km")
+         escreval(hm, "hm")
+         escreval(dam, "dam")
+         escreval(dm, "dm")
+         escreval(cm, "cm")
+         escreval(mm, "mm")
+fimalgoritmo

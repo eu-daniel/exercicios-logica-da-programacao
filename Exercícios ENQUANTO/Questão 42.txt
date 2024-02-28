@@ -1,0 +1,15 @@
+algoritmo "Questão 39"
+
+var
+   cont, valor: inteiro
+inicio
+// Seção de Comandos
+   cont <- 1
+   escreva("Digite um valor: ")
+   leia(valor)
+   enquanto (cont <= valor) faca
+            escreval(cont, " ")
+            cont <- cont + 1
+   fimEnquanto
+   escreva("Acabou!")
+fimalgoritmo
